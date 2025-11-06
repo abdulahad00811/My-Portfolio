@@ -1,0 +1,246 @@
+/* ===== Admin Login (Auth) ===== */
+.admin-auth-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8ffe8 0%, #f7fff7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-auth-box {
+  background: #fff;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(46,173,46,0.10), 0 1.5px 8px rgba(0,0,0,0.07);
+  min-width: 320px;
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: stretch;
+}
+
+.admin-auth-box h2 {
+  color: #2ead2e;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.admin-auth-error {
+  color: #e74c3c;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  background: #ffeaea;
+  border-radius: 6px;
+  padding: 0.4rem 0;
+}
+
+.admin-auth-box input {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  background: #f7fff7;
+}
+
+.admin-auth-box input:focus {
+  border-color: #2ead2e;
+  background: #f0fff0;
+  box-shadow: 0 0 0 2px #2ead2e22;
+}
+
+.admin-auth-box button {
+  background: #2ead2e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 8px rgba(46,173,46,0.07);
+}
+
+.admin-auth-box button:hover {
+  background: #22913d;
+  box-shadow: 0 4px 16px rgba(46,173,46,0.13);
+}
+
+/* ===== Admin Panel Layout ===== */
+.admin-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: #f7fff7;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background: #2ead2e;
+  color: #fff;
+  padding: 30px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-shadow: 2px 0 12px rgba(46,173,46,0.07);
+}
+
+.admin-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.admin-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  align-items: center;
+}
+
+.admin-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  transition: color 0.2s, background 0.2s;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+}
+
+.admin-nav a:hover {
+  background: #22913d;
+  color: #e0ffe0;
+}
+
+.admin-logout {
+  margin-top: 2rem;
+  background: #fff;
+  color: #2ead2e;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  width: 80%;
+  box-shadow: 0 2px 8px rgba(46,173,46,0.07);
+}
+
+.admin-logout:hover {
+  background: #22913d;
+  color: #fff;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 40px 30px;
+  min-width: 0;
+}
+
+.admin-main h1 {
+  color: #2ead2e;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.admin-stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.5rem 2.5rem;
+  min-width: 140px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.stat-title {
+  color: #888;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-val {
+  color: #2ead2e;
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .admin-stats {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .admin-main {
+    padding: 30px 5vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-wrapper {
+    flex-direction: column;
+  }
+  .admin-sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: unset;
+    padding: 15px 10px;
+    box-shadow: none;
+  }
+  .admin-logo {
+    margin-bottom: 0;
+    font-size: 1.1rem;
+  }
+  .admin-nav {
+    flex-direction: row;
+    gap: 0.7rem;
+    width: auto;
+  }
+  .admin-nav a, .admin-logout {
+    width: auto;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.98rem;
+  }
+  .admin-main {
+    padding: 18px 2vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-auth-box {
+    min-width: 0;
+    width: 98vw;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .admin-auth-box h2 {
+    font-size: 1.3rem;
+  }
+  .admin-main h1 {
+    font-size: 1.1rem;
+  }
+  .stat-card {
+    padding: 1rem 0.7rem;
+    font-size: 0.98rem;
+  }
+}

@@ -1,0 +1,243 @@
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 14px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.modal-header h2 {
+  font-size: 1.7rem;
+  color: #333;
+  margin: 0;
+  font-weight: 700;
+}
+
+.close-icon {
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #444;
+  margin-left: 11rem;
+  transition: color 0.2s;
+  user-select: none;
+}
+.close-icon1 {
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #444;
+  margin-left: 2rem;
+  transition: color 0.2s;
+  user-select: none;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1.5px solid #c7d2fe;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: #2ead2e;
+  background: #f7fff7;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2ead2e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2ead2e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+button:hover {
+  background-color: #22913d;
+}
+
+.modal-footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.modal-footer span {
+  color: #0000ee;
+  cursor: pointer;
+  font-size: 0.98rem;
+  transition: color 0.2s;
+  
+}
+
+.modal-footer span:hover {
+  color: #800080;
+  text-decoration: underline;
+}
+
+.success-msg {
+  color: #2ead2e;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+  .modal-box {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    min-width: 0;
+    width: 98vw;
+  }
+  .modal-header h2 {
+    font-size: 1.2rem;
+  }
+  .close-icon {
+    font-size: 1.3rem;
+  }
+}
+.remember-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+}
+
+.remember-checkbox {
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.remember-label {
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Forgot Password link styling */
+.forgot-link {
+  display: block;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 18px;
+  color: #0000ee;
+  font-size: 0.98rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.forgot-link:hover {
+  color: #800080;
+  text-decoration: underline;
+}
+
+
+
+
+/* 🌙 DARK MODE for Modal */
+.dark .modal-box {
+  background: #1e1e1e;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.dark .modal-header h2 {
+  color: #f0f0f0;
+}
+
+.dark .close-icon {
+  color: #ccc;
+}
+
+.dark input {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+  border: 1.5px solid #555;
+}
+
+.dark input::placeholder {
+  color: #888;
+}
+
+.dark input:focus {
+  background-color: #222;
+  border-color: #2ead2e;
+}
+
+.dark button {
+  background-color: #2ead2e;
+  color: white;
+}
+
+.dark button:hover {
+  background-color: #22913d;
+}
+
+.dark .modal-footer span {
+  color: #89b4ff;
+}
+
+.dark .modal-footer span:hover {
+  color: #d69eff;
+}
+
+.dark .success-msg {
+  color: #75e68c;
+}
+
+.dark .remember-label {
+  color: #ccc;
+}
+
+.dark .forgot-link {
+  color: #89b4ff;
+}
+
+.dark .forgot-link:hover {
+  color: #d69eff;
+}
+.dark .modal-footer p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 0;
+}

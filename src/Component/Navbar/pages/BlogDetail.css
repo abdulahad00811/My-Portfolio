@@ -1,0 +1,108 @@
+.blog-detail-container {
+  width: 100%;
+  max-width: 100vw; /* pure viewport width */
+  margin: auto;
+  padding: 1rem 1rem 3rem 1rem;
+  box-sizing: border-box;
+  color: var(--blog-text, #232323);
+  background: var(--blog-bg, #fff);
+  border-radius: 0; /* full width me rounded corners hata sakte hain */
+  min-height: 100vh;
+  overflow-x: hidden; /* horizontal scroll hata dega */
+  position: relative;
+}
+
+.blog-detail-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  word-break: break-word;
+  padding: 0 1rem; /* thoda padding content ke sides ke liye */
+}
+
+.blog-detail-cover {
+  width: 100%; /* full width */
+  max-height: 400px; /* max height fix karo responsive ke liye */
+  object-fit: contain; /* agar image chhoti ya badi ho toh fit rahe */
+  border-radius: 0;
+  margin-bottom: 20px;
+  display: block;
+  padding: 0 1rem;
+}
+
+.blog-detail-no-image {
+  width: 100%;
+  height: 220px;
+  background: #ececec;
+  color: #888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+.blog-detail-meta {
+  font-size: 1rem;
+  color: var(--blog-meta, #888);
+  margin-bottom: 12px;
+  padding: 0 1rem;
+}
+
+.blog-detail-content {
+  padding: 1.5rem 1rem;
+  background: var(--blog-article-bg, #fafafa);
+  font-size: 1rem;
+  line-height: 1.6;
+  border-radius: 0;
+  overflow-x: auto; /* only article content scroll if needed */
+  box-sizing: border-box;
+  max-width: 100vw;
+  word-wrap: break-word;
+  color: var(--blog-text, #232323);
+}
+
+/* Floating home button, jaisa pehle tha */
+.fab-home-btn {
+  position: fixed;
+  bottom: 36px;
+  right: 36px;
+  z-index: 99;
+  background: var(--blog-btn-bg, #222);
+  color: var(--blog-btn-text, #fff);
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  font-size: 1.7rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 16%);
+  transition: background 0.3s;
+}
+.fab-home-btn:active {
+  background: #8969e0;
+  transform: scale(0.92);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .blog-detail-title {
+    font-size: 1.5rem;
+    padding: 0 12px;
+  }
+  .blog-detail-cover, .blog-detail-no-image {
+    max-height: 240px;
+  }
+  .fab-home-btn {
+    width: 44px;
+    height: 44px;
+    bottom: 18px;
+    right: 18px;
+    font-size: 1.2rem;
+  }
+}

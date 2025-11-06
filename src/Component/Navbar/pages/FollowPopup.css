@@ -1,0 +1,86 @@
+.follow-popup-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.follow-popup-box {
+  background: var(--card-bg, #fff);
+  color: var(--text-color, #000);
+  border-radius: 12px;
+  padding: 16px 20px 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.follow-popup-box p {
+  font-size: 15px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.follow-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.follow-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+}
+
+.follow-btn.github {
+  background-color: #333;
+}
+
+.follow-btn.instagram {
+  background-color: #e1306c;
+}
+
+.follow-btn .icon {
+  font-size: 16px;
+}
+
+/* Follow Popup Close Button */
+.follow-popup-close {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+  width: auto;
+  transition: color 0.2s ease;
+}
+
+.follow-popup-close:hover {
+  color: #555;
+  background-color: transparent;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

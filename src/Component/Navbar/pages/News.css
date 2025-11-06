@@ -1,0 +1,115 @@
+body {
+  background: #f3f4f6;
+  margin: 0;
+}
+
+.news-main-outer {
+  min-height: 100vh;
+  background: #f3f4f6;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.news-container {
+  width: 100%;
+  max-width: 100%;
+  background: transparent;
+  border-radius: 0;
+  margin: 0;
+  padding: 70px 0;
+  min-height: 100vh;
+  box-shadow: none;
+  position: relative;
+  scroll-margin-top: 70px;
+}
+
+.news-header {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #212529;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 28px;
+  padding: 0 5vw;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  list-style: none;
+}
+
+.news-item {
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  min-height: 190px;
+  transition: transform 0.16s, box-shadow 0.16s;
+}
+
+.news-item:hover {
+  box-shadow: 0 7px 22px rgba(51,51,51,0.14);
+  transform: translateY(-2px) scale(1.017);
+}
+
+.news-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background: #f5f7fa;
+  display: block;
+}
+
+.news-content {
+  padding: 15px 19px 16px 19px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.news-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 7px 0;
+  color: #1a202c;
+  line-height: 1.29;
+}
+
+.news-description {
+  font-size: 0.99rem;
+  color: #4a5568;
+  margin-bottom: 1.1em;
+  flex-grow: 1;
+}
+
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.91rem;
+  color: #718096;
+}
+
+.news-error, .news-loading {
+  grid-column: 1 / -1;
+  background: #fefefe;
+  color: #4a5568;
+  font-size: 1.15rem;
+  padding: 38px 23px;
+  border-radius: 9px;
+  text-align: center;
+  box-shadow: 0 1px 9px rgba(0,0,0,0.06);
+  margin: 40px auto 0 auto;
+  width: 72vw;
+  max-width: 650px;
+}
