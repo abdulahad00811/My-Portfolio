@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./About.css";
-import img1 from "../../../assets/Myimg1.jpg";
-import img2 from "../../../assets/Myimg2.jpg";
-import img3 from "../../../assets/Myimg3.jpg";
+import img1 from "../../../assets/Myimg1.JPG";
+import img2 from "../../../assets/Myimg2.JPG";
+import img3 from "../../../assets/Myimg3.JPG";
 import { FaDownload, FaCode, FaReact, FaNodeJs, FaDatabase, FaFire } from "react-icons/fa";
 
 const slides = [
