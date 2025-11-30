@@ -6,6 +6,7 @@ import About from "./Component/Navbar/pages/About";
 import Projects from "./Component/Navbar/pages/Projects";
 import Contact from "./Component/Navbar/pages/Contact";
 import Footer from "./Component/Navbar/pages/Footer";
+import Certificates from "./Component/Navbar/pages/Certificates";
 import ChattingApp from "./Component/Navbar/pages/ChattingApp";
 import LudoApp from "./Component/Navbar/pages/LudoApp";
 import LoginModal from "./Component/Navbar/pages/Login";
@@ -82,6 +83,7 @@ const App = () => {
 
             /> */}
             <About />
+            <Certificates />
 
             <Contact />
             {/* <ChattingApp /> */}

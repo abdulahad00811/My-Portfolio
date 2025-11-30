@@ -143,6 +143,20 @@ export default function Navbar({ onLoginClick }) {
             About
           </Link>
         </li>
+        <li>
+          <Link
+            to="certificates"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            activeClass="active"
+            spy={true}
+            onClick={closeMenu}
+            className="navbar-link"
+          >
+            Certificates
+          </Link>
+        </li>
 
         <li>
           <Link

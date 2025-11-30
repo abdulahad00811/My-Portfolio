@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Home.css";
 import Myimage from "../../../assets/Myimage.jpg";
-import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp, FaRobot } from "react-icons/fa";
-import ChatBot from './ChatBot'; // path bilkul sahi hai
+import { FaGithub, FaLinkedin, FaWhatsapp, FaRobot } from "react-icons/fa";
+import { SiX } from "react-icons/si"; // New X (Twitter) logo
+// import ChatBot from './ChatBot';
 
 export default function Home() {
   const [showChatBot, setShowChatBot] = useState(false);
@@ -42,9 +43,15 @@ export default function Home() {
             </a>
           </div>
           <div className="social-links">
-            <a href="https://github.com/CodingWithAhad" target="_blank" rel="noreferrer"><FaGithub /></a>
-            <a href="https://linkedin.com/in/abdulahad-devloper" target="_blank" rel="noreferrer"><FaLinkedin /></a>
-            <a href="https://twitter.com/oye-abdul" target="_blank" rel="noreferrer"><FaTwitter /></a>
+            <a href="https://github.com/CodingWithAhad" target="_blank" rel="noreferrer" className="github-link">
+              <FaGithub style={{ fill: "#181717" }}/>
+            </a>
+            <a href="https://linkedin.com/in/abdulahad-devloper" target="_blank" rel="noreferrer" className="linkedin-link">
+              <FaLinkedin style={{ fill: "#0A66C2" }} />
+            </a>
+            <a href="https://twitter.com/oye-abdul" target="_blank" rel="noreferrer" className="x-link">
+              <SiX style={{ fill: "#181717" }} />
+            </a>
           </div>
         </div>
       </div>
