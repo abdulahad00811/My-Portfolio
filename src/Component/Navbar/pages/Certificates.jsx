@@ -1,13 +1,13 @@
 import React from "react";
 import "./Certificates.css";
-import Certificate1 from "../../../assets/certificateimg/Certificate1.jpg";
-import Certificate2 from "../../../assets/certificateimg/Certificate2.jpg";
-import Certificate3 from "../../../assets/certificateimg/Certificate3.jpg";
-// import Certificate4 from "../../../assets/certificateimg/Certificate4.jpg";
-// import Certificate5 from "../../../assets/certificateimg/Certificate5.jpg";
-import Certificate6 from "../../../assets/certificateimg/Certificate6.jpg";
-import Certificate7 from "../../../assets/certificateimg/Certificate7.jpg";
-import Certificate9 from "../../../assets/certificateimg/Certificate9.jpg";
+import Certificate1 from "../../../assets/certificateimg/certificate1.jpg";
+import Certificate2 from "../../../assets/certificateimg/certificate2.jpg";
+import Certificate3 from "../../../assets/certificateimg/certificate3.jpg";
+// import Certificate4 from "../../../assets/certificateimg/certificate4.jpg";
+// import Certificate5 from "../../../assets/certificateimg/certificate5.jpg";
+import Certificate6 from "../../../assets/certificateimg/certificate6.jpg";
+import Certificate7 from "../../../assets/certificateimg/certificate7.jpg";
+import Certificate9 from "../../../assets/certificateimg/certificate9.jpg";
 
 const certificateData = [
   {
